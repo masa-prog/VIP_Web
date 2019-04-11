@@ -15,8 +15,19 @@ p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
-  color: #26a69a;
+
+
+ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+.box_blue{
+	background: #f1f8ff; /*背景色*/
+  color: #1e366a;
+  border-top: solid #1e366a 1px;/*上のボーダー*/
+  border-bottom: solid #1e366a 1px;/*下のボーダー*/
+  padding: 0.5em 0 0.5em 1.5em;
 }
 
 .parallax-container {
