@@ -2,6 +2,12 @@
 
 $(function(){
    // #で始まるアンカーをクリックした場合に処理
+   $(".dropdown-trigger").dropdown(
+    // constrain_width: false,
+    // hover: true,
+    // belowOrigin: false
+   );
+
    $('a[href^=#]').click(function() {
       // スクロールの速度
       var speed = 400; // ミリ秒

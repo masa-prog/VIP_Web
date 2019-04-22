@@ -10,7 +10,6 @@
 		<link type="txt/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<!--Let browser know website is optimized for mobile-->	
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 		<!--link rel="stylesheet" href=""-->
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -24,7 +23,7 @@
 
 
   <!--スクロール時にfix-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+ <!--  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript">
     jQuery(function($) {
     var nav = $('#globalNavi'),
@@ -38,7 +37,7 @@
       }
     });
     });
-</script>
+</script> -->
 
 
 	</head>
@@ -48,8 +47,37 @@
 	<!-- Dropdown Structure -->
   
 	<!--Top button-->
+
+<!-- Dropdown Structure -->
+<div class="navbar-fixed">
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">日本語</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">English</a></li>
+  </ul>
+  <nav class="white">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">VIP</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about_p">ABOUT US</a></li>
+        <li><a href="#member_p">MEMBER</a></li>
+        <li><a href="#publication_p">PUBLICATION</a></li>
+        <li><a href="#contact_p">CONTACT</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">LANGUAGE<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+<!--       <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a> -->
+    </div>
+  </nav>
+</div>
+
 	 
-  <nav class="white site-header" role="navigation" id="globalNavi">
+<!--   <nav class="white site-header" role="navigation" id="globalNavi">
     <div class="nav-wrapper container">
 		<a id="logo-container" class="brand-logo"><img src="image/VIP.png" width="220" height="60"></a>
      
@@ -61,14 +89,14 @@
         <li><a href="#contact_p">CONTACT</a></li>
         <li><a href="log_in.html">LOG IN</a></li>
         <li><a href="#">LANGUAGE</a></li>
-      </ul>
+      </ul> -->
 
-   <!--    <ul id="nav-mobile" class="sidenav">
+<!--       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><em class="material-icons">menu</em></a></div> -->
-  </div>
-  </nav>
+ <!--  </div>
+  </nav> -->
 
   <div id="index-banner content" class="parallax-container">
     <!--div class="section no-pad-bot" -->
@@ -79,7 +107,6 @@
           <h5 class="header col s12 light">Visual Information Processing Laboratory</h5>
         </div>
         <br>
-
       </div>
     <!--/div -->
     <div class="parallax"><img src="image/background1.jpg" alt="Unsplashed background img 1"></div>
@@ -208,7 +235,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 id="contact_p">NEWS 最新情報</h4>
+          <h4>NEWS 最新情報</h4>
 			
 			 <div class="container">
         <div class="row center">
@@ -301,100 +328,19 @@
             <td>+81 (077) 599-4374  </td>
           </tr>
         </table>
-<!-- 					  <form action="/my-handling-form-page" method="post">
-						  <div>
-							<label for="name">Name:</label>
-							<input type="text" id="name" name="user_name">
-						  </div>
-						  <div>
-							<label for="mail">E-mail:</label>
-							<input type="email" id="mail" name="user_mail">
-						  </div>
-						  <div>
-							<label for="msg">Message:</label>
-							<textarea id="msg" name="user_message"></textarea>
-						  </div>
-						  <div class="button">
-							  <button type="submit">Send your message</button>
-						  </div>
-					</form> -->
 				</div>
 			<!-- </div> -->
         </div>
       </div>
 
     </div>
-<!--     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
     <div class="footer-copyright">
-      <div class="container">
-        <center>
-          Copyright © <a class="brown-text text-lighten-3" >2019- Visual Information Processing Laboratory</a>
-        </center>
+      <div class="container"><center>
+        Copyright © <a class="brown-text text-lighten-3"> 2019- Visual Information Processing Laboratory</a></center>
+      </div>
     </div>
-    </div>
-  </footer>
+    </footer>
 
-  <div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>名前</th>
-        <th>メールアドレス</th>
-        <th>電話番号</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-          <td>煌木 太郎</td>
-          <td>taro.kirameki@example.com</td>
-          <td>09011112222</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-          <td>煌木 次郎</td>
-          <td>jiro.kirameki@example.com</td>
-          <td>09033334444</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-          <td>煌木 花子</td>
-          <td>hanako.kirameki@example.com</td>
-          <td>09055556666</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-
-  </body>
+</body>
 </html>
