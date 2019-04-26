@@ -7163,7 +7163,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     indicators: true,
     height: 400,
     duration: 500,
-    interval: 6000
+    interval: 2000
   };
 
   /**
