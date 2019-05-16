@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 	<head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   		<title>VIP-Visual Information Processing Laborator</title>
@@ -9,7 +9,7 @@
 		<!-- Import materialize.css -->
 		<link type="txt/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<!--Let browser know website is optimized for mobile-->	
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
 
 		<!--link rel="stylesheet" href=""-->
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -21,6 +21,25 @@
   <script src="js/init.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/slider.js"></script>
+
+
+  <!--スクロール時にfix(多分もう使わない)-->
+ <!--  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    jQuery(function($) {
+    var nav = $('#globalNavi'),
+    offset = nav.offset();
+    $(window).scroll(function () {
+      if($(window).scrollTop() > offset.top) {
+        console.log("test")
+        nav.addClass('fixed');
+      } else {
+        nav.removeClass('fixed');
+      }
+    });
+    });
+</script> -->
+
 
 	</head>
 <body onCopy="return false;">
@@ -48,15 +67,38 @@
         <!-- Dropdown Trigger -->
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">LANGUAGE<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
-      <ul id="nav-mobile" class="sidenav">
+<!--       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">
         <i class="material-icons">menu</i>
-      </a>
+      </a> -->
     </div>
   </nav>
 </div>
+
+	 
+<!--   <nav class="white site-header" role="navigation" id="globalNavi">
+    <div class="nav-wrapper container">
+		<a id="logo-container" class="brand-logo"><img src="image/VIP.png" width="220" height="60"></a>
+     
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about_p">ABOUT US</a></li>
+        <li><a href="#member_p">MEMBER</a></li>
+        <li><a href="#publication_p">PUBLICATIONS</a></li>
+        <li><a href="#contact_p">CONTACT</a></li>
+        <li><a href="log_in.html">LOG IN</a></li>
+        <li><a href="#">LANGUAGE</a></li>
+      </ul> -->
+
+<!--       <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><em class="material-icons">menu</em></a></div> -->
+ <!--  </div>
+  </nav> -->
+
 
 
   <div class="slider">
@@ -74,7 +116,9 @@
                   </div>
                 <!--/div -->
                 <div class="parallax"><img src="image/background1.jpg" alt="Unsplashed background img 1"></div>
-            </div>
+              </div>
+            
+              
         </li>
         <li>
             <div id="index-banner content" class="parallax-container">
@@ -89,7 +133,9 @@
                   </div>
                 <!--/div -->
                 <div class="parallax"><img src="image/background2.jpg" alt="Unsplashed background img 1"></div>
-            </div>
+              </div>
+            
+             
         </li>
         <li>
             <div id="index-banner content" class="parallax-container">
@@ -104,7 +150,9 @@
                   </div>
                 <!--/div -->
                 <div class="parallax"><img src="image/background3.jpg" alt="Unsplashed background img 1"></div>
-            </div>
+              </div>
+            
+            
         </li>
       </ul>
     </div>
@@ -113,10 +161,13 @@
   <div class="container">
     <div class="section">
 		<div class="row">
-        <div class="col s12 center">
+    <div class="col s12 center">
           <h4 id="about_p">ABOUT US</h4>
           <p class="left-align light">Computer Vision Pattern Recognition(画像処理パターン認識）Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+    </div>
+    <div class="col s12 center">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4JHKLyIysLF90bKk8UAU3TjhTERzYqGWs39rMoqctbERfeRFa5RPMgtqojB0OTCblYl-CxRrS_OXC/embed?start=false&amp;loop=false&amp;delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
 		<div class="col s12 m3">
           <div class="icon-block">
             <h2 class="center brown-text"><em class="material-icons">settings</em></h2>
@@ -222,6 +273,75 @@
     <div class="parallax"><img src="image/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
   </div>
+
+
+  
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>NEWS 最新情報</h4>
+			
+			 <div class="container">
+        <div class="row center">
+       
+          <div class="box16">
+			  <table>
+				  <tr>
+				  	<th>2005/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+				  <tr>
+				  	<th>2005/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+				  <tr>
+				  	<th>2005/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+				  <tr>
+				  	<th>2018/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+				  <tr>
+				  	<th>2018/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+				  <tr>
+				  	<th>2019/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+				  <tr>
+				  	<th>2019/04/06</th><td>サイトリニューアル</td>
+				  </tr>
+			  </table>
+		  </div>
+        </div>
+      </div>
+				<div class="col m6">
+         
+<!-- 					  <form action="/my-handling-form-page" method="post">
+						  <div>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="user_name">
+						  </div>
+						  <div>
+							<label for="mail">E-mail:</label>
+							<input type="email" id="mail" name="user_mail">
+						  </div>
+						  <div>
+							<label for="msg">Message:</label>
+							<textarea id="msg" name="user_message"></textarea>
+						  </div>
+						  <div class="button">
+							  <button type="submit">Send your message</button>
+						  </div>
+					</form> -->
+				</div>
+			<!-- </div> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 	
   <footer class="page-footer teal">
 	   <div class="section">
