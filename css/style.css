@@ -15,6 +15,10 @@ p {
   line-height: 2rem;
 }
 
+nav .sidenav-trigger{
+  z-index: 999 !important;
+}
+
 .adjust{
   line-height: 2.0;
   padding: 0.5em 0;
@@ -86,3 +90,4 @@ footer.page-footer {
 .mouse-hover{
   cursor:pointer;
 }
+
