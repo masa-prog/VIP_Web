@@ -9,8 +9,8 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  top: 7px;
 }
-
 p {
   line-height: 2rem;
 }
@@ -20,7 +20,13 @@ p {
   padding: 0.5em 0;
 }
 
-
+.box_simple{
+color: #1c1d1f;
+border-top: solid #0ad365 1px;/*＊上のボーダー*/
+border-bottom: solid #0ad365 1px;/*＊下のボーダー*/
+padding: 0.5em 0 0.5em 1.5em;
+  
+}
 
 .box_blue{
 	background: #f1f8ff; /*背景色*/
@@ -75,4 +81,3 @@ footer.page-footer {
  position: fixed;
  z-index: 10000;
 }
-
