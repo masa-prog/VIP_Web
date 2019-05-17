@@ -81,3 +81,9 @@ footer.page-footer {
  position: fixed;
  z-index: 10000;
 }
+
+/*マウスホバーのポインター変更*/
+.mouse-hover{
+  cursor:pointer;
+}
+
