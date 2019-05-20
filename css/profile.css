@@ -11,7 +11,7 @@ member.html 丸いプロフィール画像
   display: inline-block;          /* 複数の画像を横に並べたい場合 */
 }
 .doctor2-image {
-    background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+    background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -19,7 +19,7 @@ member.html 丸いプロフィール画像
     display: inline-block;          /* 複数の画像を横に並べたい場合 */
   }
   .doctor3-image {
-    background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+    background-image: url("../image/profile_img/river1.png");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -28,7 +28,7 @@ member.html 丸いプロフィール画像
   }
   /*----------------Master---------------------*/
   .master1-image {
-    background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+    background-image: url("../image/profile_img/liuqianyuan.jpg");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -36,7 +36,7 @@ member.html 丸いプロフィール画像
     display: inline-block;          /* 複数の画像を横に並べたい場合 */
   }
   .master2-image {
-    background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+    background-image: url("../image/profile_img/misaki_kodaira.jpg");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -44,7 +44,7 @@ member.html 丸いプロフィール画像
     display: inline-block;          /* 複数の画像を横に並べたい場合 */
   }
   .master3-image {
-    background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+    background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -53,7 +53,7 @@ member.html 丸いプロフィール画像
   }
   /*----------------Bachelor---------------------*/
   .bachelor1-image {
-      background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+      background-image: url("../image/profile_img/river1.png");  /* 表示する画像 */
       width:  150px;       /* ※縦横を同値に */
       height: 150px;       /* ※縦横を同値に */
       border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -61,7 +61,7 @@ member.html 丸いプロフィール画像
       display: inline-block;          /* 複数の画像を横に並べたい場合 */
     }
     .bachelor2-image {
-      background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+      background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
       width:  150px;       /* ※縦横を同値に */
       height: 150px;       /* ※縦横を同値に */
       border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -69,7 +69,7 @@ member.html 丸いプロフィール画像
       display: inline-block;          /* 複数の画像を横に並べたい場合 */
     }
     .bachelor3-image {
-      background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+      background-image: url("../image/profile_img/river1.png");  /* 表示する画像 */
       width:  150px;       /* ※縦横を同値に */
       height: 150px;       /* ※縦横を同値に */
       border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -77,7 +77,7 @@ member.html 丸いプロフィール画像
       display: inline-block;          /* 複数の画像を横に並べたい場合 */
     }
     .bachelor4-image {
-        background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+        background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
         width:  150px;       /* ※縦横を同値に */
         height: 150px;       /* ※縦横を同値に */
         border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -85,7 +85,7 @@ member.html 丸いプロフィール画像
         display: inline-block;          /* 複数の画像を横に並べたい場合 */
       }
     .bachelor5-image {
-          background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+          background-image: url("../image/profile_img/river1.png");  /* 表示する画像 */
           width:  150px;       /* ※縦横を同値に */
           height: 150px;       /* ※縦横を同値に */
           border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -93,7 +93,7 @@ member.html 丸いプロフィール画像
           display: inline-block;          /* 複数の画像を横に並べたい場合 */
         }
     .bachelor6-image {
-          background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+          background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
           width:  150px;       /* ※縦横を同値に */
           height: 150px;       /* ※縦横を同値に */
           border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -101,7 +101,7 @@ member.html 丸いプロフィール画像
           display: inline-block;          /* 複数の画像を横に並べたい場合 */
         }
     .bachelor7-image {
-          background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+          background-image: url("../image/profile_img/MiyajimaMaskai.jpg");  /* 表示する画像 */
           width:  150px;       /* ※縦横を同値に */
           height: 150px;       /* ※縦横を同値に */
           border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -117,7 +117,7 @@ member.html 丸いプロフィール画像
           display: inline-block;          /* 複数の画像を横に並べたい場合 */
         }
     .bachelor9-image {
-            background-image: url("../image/profile_img/river.jpg");  /* 表示する画像 */
+            background-image: url("../image/profile_img/river1.png");  /* 表示する画像 */
             width:  150px;       /* ※縦横を同値に */
             height: 150px;       /* ※縦横を同値に */
             border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
