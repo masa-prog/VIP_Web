@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<!---タブの箇所--->
-<title>VIP-Visual Information Processing Laborator</title>
-<!--ホームページのタブ画像(favicon/touch-icon) icon-->
-<link rel="shortcut icon" href="image/logo/favicon.ico">
-<link rel="apple-touch-icon" href="image/logo/icon-16x16.png">
+    <!---タブの箇所--->
+    <title>VIP-Visual Information Processing Laborator</title>
+    <!--ホームページのタブ画像(favicon/touch-icon) icon-->
+    <link rel="shortcut icon" href="image/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="image/logo/icon-16x16.png">
 
     <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,54 +19,52 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/profile.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/modal.js"></script>
-
 </head>
-<body onCopy="return false;">
-    <!--JavaScript at end of body for optimized loading-->
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+<body>
 
-    <!-- Dropdown Structure -->
-<!--         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">Lab</a></li>
-            <li><a href="#!">Kato Jien</a></li>
-            <li class="divider"></li>
-        </ul> -->
-        <!--ナビゲーション-->
-        <div class="navbar-fixed">
-          <ul id="dropdown1" class="dropdown-content">
-           <li><a href="#professor_p">Professor</a></li>
-           <li class="divider"></li>
-           <li><a href="#doctor_p">Doctore</a></li>
-           <li class="divider"></li>
-           <li><a href="#master_p">Master</a></li>
-           <li class="divider"></li>
-           <li><a href="#bachelor_p">Bachelor</a></li>
-       </ul>
-       <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-                <a href="#" class="brand-logo"><img src="image/logo/icon-48x48.png"></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">HOME</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">DEGREE<i class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="#">LOG IN</a></li>
-            </ul>
+    <div class="fixed-action-btn scroll-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn btn-floating btn-large">
+        <i class="material-icons">arrow_upward</i>
+    </a>
+</div>
 
- <!--                <ul id="nav-mobile" class="sidenav">
-                  <li><a href="#">Navbar Link</a></li>
-              </ul>
-              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><em class="material-icons">menu</em></a> -->
-          </div>
-      </nav>
-  </div>
+<!--ナビゲーション-->
+<div class="navbar-fixed">
+  <ul id="dropdown1" class="dropdown-content">
+   <li><a href="#professor_p">Professor</a></li>
+   <li class="divider"></li>
+   <li><a href="#doctor_p">Doctor</a></li>
+   <li class="divider"></li>
+   <li><a href="#master_p">Master</a></li>
+   <li class="divider"></li>
+   <li><a href="#bachelor_p">Bachelor</a></li>
+</ul>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo pc"><img src="image/logo/icon-48x48.png"></a>
+        <a href="index.html" class="brand-logo sp"><img src="image/logo/icon-36x36.png"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">DEGREE<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <a href="#!" data-target="nav-mobile" class="sidenav-trigger right">
+            <i class="material-icons blue-grey-text">menu</i>
+        </a>  
+    </div>
+</nav>
+</div>
 
-    
-  <div class="container">
-   <div class="section">
+<ul id="nav-mobile" class="sidenav">
+  <li><a href="index.html" class="sidenav-li"> HOME</a></li>
+  <li><a href="#professor_p"" class="sidenav-li">Professor</a></li>
+  <li><a href="#doctor_p"" class="sidenav-li">Doctor</a></li>
+  <li><a href="#master_p" class="sidenav-li">Master</a></li>
+  <li><a href="#bachelor_p" class="sidenav-li">Bachelor</a></li>
+</ul>
+
+
+<div class="container">
+    <div class="section">
 
         <!--   Icon Section   -->
         <div class="row">
@@ -74,19 +72,6 @@
                 <h3>MEMBER</h3>
             </div>
         </div>
-    </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-            </div>
-        </div>
-        <div class="parallax"><img src="image/background4.jpg" alt="Unsplashed background img 2"></div>
-    </div>
-
-  <div class="container">
-    <div class="section">
         <div class="row">
             <div class="col s12 center">
                 <h4 id="professor_p">Professor</h4>
@@ -124,11 +109,8 @@
                     1999年4月-2000年3月　オックスフォード大学　客員研究員<br>
                     1993年4月-2000年3月　富山大学　工学部　助手<br>
                     1990年4月-1993年3月　名古屋大学　大学院工学研究科　博士課程後期課程　博士（工学）<br>
-                    1988年4月-1990年3月　名古屋大学　大学院工学研究科　博士課程前期課程　修士（工学）<br>
+                    1988年4月-1990年3月　名古屋大学　大学院工学研究科　博士課程前期課程　修士（工学）
                 </p>
-            
-            
-            <img src="image/profile_img/jien.jpg" width="130" height="130">
             </div>
             <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -165,30 +147,30 @@
             2012.04-2013.03　日本学術振興会(JSPS) 特別研究員DC2<br>
             2005.12-2007.06　Compal Electronics, Oversea Research Center, R&D Engineer<br>
         </p>
-        <img src="image/profile_img/yu.jpg" width="130" height="130">
     </div>
     <div class="modal-footer">
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 </div>
-      </div>
-      <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                </div>
-            </div>
-            <div class="parallax"><img src="image/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+</div>
+</div>
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
         </div>
-   </div>
-  </div>
+    </div>
+    <div class="parallax"><img src="image/background4.jpg" alt="Unsplashed background img 2"></div>
+</div>
 
 <div class="container">
     <div class="section">
         <div class="row">
-                <div class = "col s12 center">
-                        <h4 id="doctor_p">Doctor</h4>
-                    </div>
+            <div class = "col s12 center">
+                <h4 id="doctor_p">Doctor</h4>
+            </div>
             <div class="col s12 m4">
                 <div class="icon-block">
                         <h6 class="center"><p class="doctor1-image" ></p></h6>
@@ -214,52 +196,58 @@
         </div>
 
         <div class="row">
-                <div class = "col s12 center">
-                        <h4 id="master_p">Master</h4>
-                    </div>
+            <div class = "col s12 center">
+                <h4 id="master_p">Master</h4>
+            </div>
             <div class="col s12 m4">
+
                 <div class="icon-block">
                     <h6 class="center"><p class="master1-image" ></p></h6>
                     <h5 class="center">劉謙遠</h5><p class="center">LIU Qianyuan</p>
                 </div>
             </div>
+            <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons"></i></h2>
+                <h5 class="center">劉謙遠</h5><p class="center">y.wang</p>
+            </div>
+        </div>
+
 
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h6 class="center brown-text"><p class="master2-image" ></p></h6>
                     <h5 class="center">小平　美沙季</h5><p class="center">Kodaira Misaki</p>
 
-                </div>
             </div>
+        </div>
+
 
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h6 class="center brown-text"><p class="master3-image" ></p></h6>
                     <h5 class="center">徐　一豪</h5><p class="center">XU Yihao</p>
-
-                </div>
             </div>
-        </div>
-        <div class="parallax-container valign-wrapper">
-                <div class="section no-pad-bot">
-                    <div class="container">
-                    </div>
-                </div>
-                <div class="parallax"><img src="image/background6.jpg" alt="Unsplashed background img 2"></div>
         </div>
     </div>
 </div>
+</div>
 
 
-
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+        </div>
+    </div>
+    <div class="parallax"><img src="image/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
 
 <div class="container">
     <div class="section">
 
         <div class="row">
-                <div class="col s12 center">
-                        <h4 id="bachelor_p">Bachelor</h4>
-                    </div>
+            <div class="col s12 center">
+                <h4 id="bachelor_p">Bachelor</h4>
+            </div>
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h6 class="center brown-text"><p class="bachelor1-image" ></p></h6>
@@ -359,7 +347,7 @@
                   </tr>
                   <tr>
                     <th>E-mail</th>
-                    <td>jien at fc.ritsumei.ac.jp </td>
+                    <td><img src="image/mail.png" height="30px"</td>
                 </tr>
                 <tr>
                     <th>Phone/Fax</th>
@@ -378,6 +366,10 @@
 </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
