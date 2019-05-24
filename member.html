@@ -1,3 +1,4 @@
+
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -381,3 +382,377 @@
 
 </body>
 </html>
+=======
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!---タブの箇所--->
+    <title>VIP-Visual Information Processing Laborator</title>
+    <!--ホームページのタブ画像(favicon/touch-icon) icon-->
+    <link rel="shortcut icon" href="image/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="image/logo/icon-16x16.png">
+
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="txt/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->	
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--link rel="stylesheet" href=""-->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/profile.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+
+    <div class="fixed-action-btn scroll-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn btn-floating btn-large">
+        <i class="material-icons">arrow_upward</i>
+    </a>
+</div>
+
+<!--ナビゲーション-->
+<div class="navbar-fixed">
+  <ul id="dropdown1" class="dropdown-content">
+   <li><a href="#professor_p">Professor</a></li>
+   <li class="divider"></li>
+   <li><a href="#doctor_p">Doctor</a></li>
+   <li class="divider"></li>
+   <li><a href="#master_p">Master</a></li>
+   <li class="divider"></li>
+   <li><a href="#bachelor_p">Bachelor</a></li>
+</ul>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo pc"><img src="image/logo/icon-48x48.png"></a>
+        <a href="index.html" class="brand-logo sp"><img src="image/logo/icon-36x36.png"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">DEGREE<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <a href="#!" data-target="nav-mobile" class="sidenav-trigger right">
+            <i class="material-icons blue-grey-text">menu</i>
+        </a>  
+    </div>
+</nav>
+</div>
+
+<ul id="nav-mobile" class="sidenav">
+  <li><a href="index.html" class="sidenav-li"> HOME</a></li>
+  <li><a href="#professor_p"" class="sidenav-li">Professor</a></li>
+  <li><a href="#doctor_p"" class="sidenav-li">Doctor</a></li>
+  <li><a href="#master_p" class="sidenav-li">Master</a></li>
+  <li><a href="#bachelor_p" class="sidenav-li">Bachelor</a></li>
+</ul>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 center">
+                <h3>MEMBER</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center">
+                <h4 id="professor_p">Professor</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="icon-block">
+                    <h5 class="center">加藤 ジェーン</h5><p class="center">KATO Jien</p>
+                    <p class="light">
+                      Professor , Visual Information Processing Laboratory
+                      Information Technology Science
+                      Ritsumeikan University, Japan 
+                  </p>
+              </div>
+              <!-- Modal Trigger -->
+              <!-- <a data-target="modal1" class="waves-effect waves-light btn modal-trigger" href="#modal1">More</a> -->
+              <p class="center"><button data-target="modal1" class="btn modal-trigger">More</button></p>
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                  <div class="modal-content">
+                   <h4>学歴</h4>
+                   <p>
+                    2013.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　博士（工学）<br>
+                2010.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　修士（情報科学）</p>
+                <h4>職歴</h4>
+                <p>
+                    2018年4月-今現在　立命館大学　情報理工学部　教授<br>
+                    2017年4月-2018年4月　名古屋大学　大学院情報学研究科　准教授<br>
+                    2005年4月-2017年3月　名古屋大学　大学院情報科学研究科　准教授<br>
+                    2003年4月-2005年3月　名古屋大学　大学院情報科学研究科　助教授<br>
+                    2000年4月-2003年3月　名古屋大学　大学院工学研究科　助教授<br>
+                    1999年4月-2000年3月　オックスフォード大学　客員研究員<br>
+                    1993年4月-2000年3月　富山大学　工学部　助手<br>
+                    1990年4月-1993年3月　名古屋大学　大学院工学研究科　博士課程後期課程　博士（工学）<br>
+                    1988年4月-1990年3月　名古屋大学　大学院工学研究科　博士課程前期課程　修士（工学）
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="icon-block">
+            <h5 class="center">王</h5><p class="center">y.wang</p>
+            <p class="light">
+              Assistant Professor ,
+              Graduate School of International Development
+              Ritsumeikan University, Japan 
+          </p>
+
+      </div>
+      <!-- Modal Trigger -->
+      <!-- <a data-target="modal2" class="waves-effect waves-light btn modal-trigger" href="#modal2">More</a> -->
+      <p class="center"><button data-target="modal2" class="btn modal-trigger">More</button></p>
+
+      <!-- Modal Structure -->
+      <div id="modal2" class="modal">
+          <div class="modal-content">
+           <h4>学歴</h4>
+           <p>
+            2013.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　博士（工学）<br>
+        2010.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　修士（情報科学）</p>
+        <h4>職歴</h4>
+        <p>
+            2017.04-現在　 　名古屋大学大学院国際開発研究科 助教<br>
+            2016.04-2017.03　名古屋大学大学院情報科学研究科 特任助教<br>
+            2014.04-2016.03　日本学術振興会(JSPS) 外国人特別研究員<br>
+            2013.04-2014.03　日本学術振興会(JSPS) 特別研究員PD<br>
+            2012.04-2013.03　日本学術振興会(JSPS) 特別研究員DC2<br>
+            2005.12-2007.06　Compal Electronics, Oversea Research Center, R&D Engineer<br>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+        </div>
+    </div>
+    <div class="parallax"><img src="image/background4.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class = "col s12 center">
+                <h4 id="doctor_p">Doctor</h4>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center"><p class="doctor1-image" ></p></h6>
+                    <h5 class="center">趙隆姣</h5><p class="center">Zhao Longjiao</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center"><p class="doctor2-image" ></p></h6>
+                    <h5 class="center">劉迪超</h5><p class="center">Liu Dichao</p>
+
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center"><p class="doctor3-image" ></p></h6>
+                    <h5 class="center">吉颖</h5><p class="center">JI Ying</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "col s12 center">
+                <h4 id="master_p">Master</h4>
+            </div>
+            <div class="col s12 m4">
+
+                <div class="icon-block">
+                    <h6 class="center"><p class="master1-image" ></p></h6>
+                    <h5 class="center">劉謙遠</h5><p class="center">LIU Qianyuan</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="master2-image" ></p></h6>
+                    <h5 class="center">小平　美沙季</h5><p class="center">Kodaira Misaki</p>
+
+                </div>
+            </div>
+
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="master3-image" ></p></h6>
+                    <h5 class="center">徐　一豪</h5><p class="center">XU Yihao</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+        </div>
+    </div>
+    <div class="parallax"><img src="image/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+
+        <div class="row">
+            <div class="col s12 center">
+                <h4 id="bachelor_p">Bachelor</h4>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor1-image" ></p></h6>
+                    <h5 class="center">安藤　菜名</h5><p class="center">Ando Nana</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor2-image" ></p></h6>
+                    <h5 class="center">内田　準也</h5><p class="center">Uchida Junya</p>
+
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor3-image" ></p></h6>
+                    <h5 class="center">小野　史織</h5><p class="center">Ono Shiori</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor4-image" ></p></h6>
+                    <h5 class="center">杉山　瑠菜</h5><p class="center">Sugiyama Runa</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor5-image" ></p></h6>
+                    <h5 class="center">中村　大成</h5><p class="center">Nakamura Taisei</p>
+
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor6-image" ></p></h6>
+                    <h5 class="center">福田　諒</h5><p class="center">Fukuda Ryou</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor7-image" ></p></h6>
+                    <h5 class="center">宮島　正樹</h5><p class="center">Miyajima Masaki</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor8-image" ></p></h6>
+                    <h5 class="center">鷲尾　祐佳</h5><p class="center">Washio Yuka</p>
+
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h6 class="center brown-text"><p class="bachelor9-image" ></p></h6>
+                    <h5 class="center">時 毓喬</h5><p class="center">SHI Yuqiao</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="page-footer teal">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center">
+             <h4 id="contact_p">Contact Us</h4>
+             <!-- <div class="box17"> -->
+                <div class="col m6">
+                 <table>
+
+                  <iframe src="https://maps.google.co.jp/maps?output=embed&q=立命館大学クリエーションコア&t=m" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+              </table>					
+          </div>
+          <div class="col m6">
+              <table>
+                  <tr>
+                    <th>住所</th>
+                    <td>〒525-0058<br>
+                      滋賀県草津市野路東１丁目１−１<br>
+                      クリエーションコア ２階<br></td>
+                  </tr>
+                  <tr>
+                    <th>E-mail</th>
+                    <td><img src="image/mail.png" height="30px"</td>
+                </tr>
+                <tr>
+                    <th>Phone/Fax</th>
+                    <td>+81 (077) 599-4374  </td>
+                </tr>
+            </table>
+        </div>
+        <!-- </div> -->
+    </div>
+</div>
+</div>
+<div class="footer-copyright">
+    <div class="container">
+        Copyright © <a class="brown-text text-lighten-3"> 2019- Visual Information Processing Laboratory</a>
+    </div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
