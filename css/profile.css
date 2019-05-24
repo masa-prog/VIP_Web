@@ -3,7 +3,7 @@ member.html 丸いプロフィール画像
 --*/
 /*-------------------Doctor---------------------*/
  .doctor1-image {
-  background-image: url("../image/profile_img/demo.png");  /* 表示する画像 */
+  background-image: url("../image/profile_img/Zhao.jpg");  /* 表示する画像 */
   width:  150px;       /* ※縦横を同値に */
   height: 150px;       /* ※縦横を同値に */
   border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -19,7 +19,7 @@ member.html 丸いプロフィール画像
     display: inline-block;          /* 複数の画像を横に並べたい場合 */
   }
   .doctor3-image {
-    background-image: url("../image/profile_img/river1.png");  /* 表示する画像 */
+    background-image: url("../image/profile_img/ji _ing.jpg");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -44,7 +44,7 @@ member.html 丸いプロフィール画像
     display: inline-block;          /* 複数の画像を横に並べたい場合 */
   }
   .master3-image {
-    background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
+    background-image: url("../image/profile_img/jo.jpg");  /* 表示する画像 */
     width:  150px;       /* ※縦横を同値に */
     height: 150px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -61,7 +61,7 @@ member.html 丸いプロフィール画像
       display: inline-block;          /* 複数の画像を横に並べたい場合 */
     }
     .bachelor2-image {
-      background-image: url("../image/profile_img/river.png");  /* 表示する画像 */
+      background-image: url("../image/profile_img/Jyunya.jpg");  /* 表示する画像 */
       width:  150px;       /* ※縦横を同値に */
       height: 150px;       /* ※縦横を同値に */
       border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
@@ -101,7 +101,7 @@ member.html 丸いプロフィール画像
           display: inline-block;          /* 複数の画像を横に並べたい場合 */
         }
     .bachelor7-image {
-          background-image: url("../image/profile_img/MiyajimaMaskai.jpg");  /* 表示する画像 */
+          background-image: url("../image/profile_img/MiyajimaMasaki.png");  /* 表示する画像 */
           width:  150px;       /* ※縦横を同値に */
           height: 150px;       /* ※縦横を同値に */
           border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
