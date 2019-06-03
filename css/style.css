@@ -81,3 +81,30 @@ footer.page-footer {
  position: fixed;
  z-index: 10000;
 }
+
+/*マウスホバーのポインター変更*/
+.mouse-hover{
+  cursor:pointer;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+.scroll-btn { display: none !important; }
+.slide-height {
+   height:569px; 
+}
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 600px) {
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+  .scroll-btn { display: block !important; }
+  .slide-height {
+     height:350px; 
+  }
+  .contact-form {
+    text-align: center;
+  }
+}
+
+
