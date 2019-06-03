@@ -1,0 +1,52 @@
+/*------------------スクロール　フェードイン---------------------*/
+.css-fade3--in{
+  /*アニメーション設定*/
+  animation-name:fade-in3;
+  animation-duration:2.5s; /*アニメーション時間*/
+  animation-timing-function: ease-out; /*アニメーションさせるイージング*/
+  animation-delay:0; /*アニメーション開始させる時間*/
+  animation-iteration-count:1; /*繰り返し回数*/
+  animation-direction:normal; /*往復処理をするかどうか*/
+  animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
+}
+/* アニメーション*/
+@keyframes fade-in3 {
+  0% {opacity: 0; transform: translate3d(0,30px,0);}
+  100% {opacity: 1; transform: translate3d(0,0,0);}
+}
+
+
+.css-fade4--in{
+  /*アニメーション設定*/
+  animation-name:fade-in4;
+  animation-duration:2s; /*アニメーション時間*/
+  animation-timing-function: ease-out; /*アニメーションさせるイージング*/
+  animation-delay:0; /*アニメーション開始させる時間*/
+  animation-iteration-count:1; /*繰り返し回数*/
+  animation-direction:normal; /*往復処理をするかどうか*/
+  animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
+}
+/* アニメーション*/
+@keyframes fade-in4 {
+  0% {opacity: 0; transform: translate3d(0,30px,0);}
+  100% {opacity: 1; transform: translate3d(0,0,0);}
+}
+
+
+
+  .css-fade5--in{
+    /*アニメーション設定*/
+    animation-name:fade-in5;
+    animation-duration:2.5s; /*アニメーション時間*/
+    animation-timing-function: ease-out; /*アニメーションさせるイージング*/
+    animation-delay:0; /*アニメーション開始させる時間*/
+    animation-iteration-count:1; /*繰り返し回数*/
+    animation-direction:normal; /*往復処理をするかどうか*/
+    animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
+  }
+  /* アニメーション*/
+  @keyframes fade-in5 {
+    0% {opacity: 0; transform: translate3d(0,30px,0);}
+    100% {opacity: 1; transform: translate3d(0,0,0);}
+  }
+  

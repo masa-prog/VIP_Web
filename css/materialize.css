@@ -4,7 +4,19 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
 
  */
+ p.resizeimage img { width: 100%; }
+ img.miniimage { display: none; }
 
+/* ▼表示領域が400px以上の場合 */
+@media screen and (min-width: 400px) {
+   img.miniimage { display: none; }  /* miniを非表示 */
+   img.bigimage  { display: block; } /* bigを表示 */
+}
+/* ▼表示領域が400px未満の場合 */
+@media screen and (max-width: 399px) {
+   img.miniimage { display: block; } /* miniを表示 */
+   img.bigimage  { display: none; }  /* bigを非表示 */
+}
 /*-----------------------------------------------------------------*/
 .clearfix:after{
 	content: "";

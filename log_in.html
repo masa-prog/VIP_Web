@@ -1,8 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="ja">
 	<head>
   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  		<title>VIP-Visual Information Processing Laborator</title>
+<!---タブの箇所--->
+<title>VIP-Visual Information Processing Laborator</title>
+<!--ホームページのタブ画像(favicon/touch-icon) icon-->
+<link rel="shortcut icon" href="image/logo/favicon.ico">
+<link rel="apple-touch-icon" href="image/logo/icon-16x16.png">
 
 		<!-- Import Google Icon Font -->
   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,95 +18,141 @@
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
-<body onCopy="return false;">
-  <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-	<!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">Lab</a></li>
-    <li><a href="#!">Kato Jien</a></li>
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!---タブの箇所--->
+  <title>VIP-Visual Information Processing Laborator</title>
+  <!--ホームページのタブ画像(favicon/touch-icon) icon-->
+  <link rel="shortcut icon" href="image/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="image/logo/icon-16x16.png">
+
+
+
+  <!-- Import Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import materialize.css -->
+  <link type="txt/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--link rel="stylesheet" href=""-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+    <div class="fixed-action-btn scroll-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn btn-floating btn-large">
+        <i class="material-icons">arrow_upward</i>
+    </a>
+</div>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">日本語</a></li>
+    <li><a href="#!">English</a></li>
     <li class="divider"></li>
-  </ul>
-	<!--ナビゲーション-->
-  <nav class="white" role="navigation">
+</ul>
+<!--ナビゲーション-->
+<div class="navbar-fixed">
+<nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#!" class="brand-logo">VIP</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">HOME</a></li>
-		<li><a href="#">ABOUT US</a></li>
-		<li><a href="#">MENBER</a></li>
-		<li><a href="#">PUBLICATIONS</a></li>
-		<li><a href="#">CONTACT</a></li>
-		<li><a href="file:///C:/Users/MV/Music/VIP/log_in.html">LOG IN</a></li>
-		<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">LANGUAGE<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
+        <a href="index.html" class="brand-logo pc"><img src="image/logo/icon-48x48.png"></a>
+        <a href="index.html" class="brand-logo sp"><img src="image/logo/icon-36x36.png"></a>            
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+   <!--          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">LANGUAGE<i class="material-icons right">arrow_drop_down</i></a></li> -->
+        </ul>
+        <a href="#!" data-target="nav-mobile" class="sidenav-trigger right">
+            <i class="material-icons blue-grey-text">menu</i>
+        </a>
+    </div>
+</nav>
+</div>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><em class="material-icons">menu</em></a></div>
-  </nav>
+<ul id="nav-mobile" class="sidenav">
+  <li><a href="index.html" class="sidenav-li">HOME</a></li>
+</ul>
 
-
-  <div class="container">
-    <div class="section">
-
+<div class="container">
+  <div class="section">
+      <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Log In</h4>
-          <p class="left-align light">Please enter your ID and password.</p>
-          
-		 
+          <div class="col s12 center">
+            <h3>LOG IN</h3>
         </div>
-      </div>
+    </div>
+ </div>
+</div>
 
+<div class="parallax-container valign-wrapper">
+  <!--div class="section no-pad-bot" -->
+  <div class="container">
+    <div class="row center">
+      <h4 class="header col s12 light" id="member_p">Coming Soon...</h4>
     </div>
   </div>
+  <!--/div -->
+  <div class="parallax"><img src="image/background8.jpg" alt="Unsplashed background img 2"></div>
+</div>
 
-
-  
-  <footer class="page-footer teal">
-    <div class="container">
+<div class="container">
+  <div class="section">
+      <!--   Icon Section   -->
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          
+    </div>
+</div>
+</div>
 
+<footer class="page-footer teal">
+  <div class="section container">
 
+    <div class="row">
+      <div class="col s12 center">
+        <h4 id="contact_p">Contact Us</h4>
+        <!-- <div class="box17"> -->
+          <div class="col m6">
+           <table>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104580.04579676189!2d135.7973803!3d35.0035401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d61a45d%3A0xe0faa970230f12c3!2z44Kv44Oq44Ko44O844K344On44OzIOOCs-OCog!5e0!3m2!1sja!2sjp!4v1559034516056!5m2!1sja!2sjp&t=m" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </table>                  
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col m6">
+          <table>
+            <tr>
+              <th>住所</th>
+              <td>〒525-0058<br>
+                滋賀県草津市野路東１丁目１−１<br>
+                クリエーションコア ２階<br></td>
+              </tr>
+              <tr>
+                <th>E-mail</th>
+                <td><img src="image/mail.png" height="30px"></td>
+              </tr>
+              <tr>
+                <th>Phone/Fax</th>
+                <td>+81 (077) 599-4374  </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
+
     </div>
+
     <div class="footer-copyright">
-      <div class="container">
-      Copyright © <a class="brown-text text-lighten-3" > 2019- Visual Information Processing Laboratory</a>
+      <div class="container"><center>
+        Copyright © <a class="brown-text text-lighten-3"> 2019- Visual Information Processing Laboratory</a></center>
       </div>
     </div>
   </footer>
 
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/script.js"></script>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>

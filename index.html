@@ -17,6 +17,7 @@
   <!--link rel="stylesheet" href=""-->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/scroll.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <!-- Element Showed -->
@@ -43,7 +44,7 @@
           <li><a href="#publication_p">PUBLICATION</a></li>
           <li><a href="#contact_p">CONTACT</a></li>
           <!-- Dropdown Trigger -->
-         <!--  <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">LANGUAGE<i class="material-icons right">arrow_drop_down</i></a></li> -->
+          <!--  <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">LANGUAGE<i class="material-icons right">arrow_drop_down</i></a></li> -->
         </ul>
         <a href="#!" data-target="nav-mobile" class="sidenav-trigger right">
           <i class="material-icons blue-grey-text">menu</i>
@@ -112,112 +113,122 @@
   <!------About Us Section----->
   <div class="container">
     <div class="section">
-      <div class="row">
+      <div class="row css-fade3">
         <div class="col s12 center">
           <h4 id="about_p">ABOUT US</h4>
-          <p class="left-align light">Computer Vision Pattern Recognition(画像処理パターン認識）Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <p class="left-align light">視覚情報処理研究室（Visual Information Science : VIP）では、画像・映像処理とディープラーニングを扱った研究に取り組んでいます。
+            この研究室は昨年、名古屋大学からいらっしゃった加藤ジェーン先生が立ち上げました。立命館大学の研究室としては歴史が浅いですが、名古屋大学の先輩方が残した題材は面白いものが多く、歴史も功績もあります。
+            具体的な研究内容は、歩行者検出、運転の推定、映像の暴力度レーティング、映像要約、蝶の詳細認識、人物行動認識などです。
+            詳細は下記のスライドでご確認ください。<br><br>
+            研究室の雰囲気は、各々が主体的な人が多く、和やかです。
+            皆で作り上げていこうという気持ちも強く、留学生の方も多いためグローバルな研究室です。<br><br>
+
+            研究室公開を下記日程（各回30分程度）で行います。また、研究室公開日程中（6/10-6/19）はそれ以外の時間も解放していますので興味がある方は是非見学に来て下さい。お待ちしています。
+          </div>
+          <div class="col s12 center">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4JHKLyIysLF90bKk8UAU3TjhTERzYqGWs39rMoqctbERfeRFa5RPMgtqojB0OTCblYl-CxRrS_OXC/embed?start=false&amp;loop=false&amp;delayms=10000" frameborder="0" width="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="slide-height"></iframe>
+          </div>
+
         </div>
-        <div class="col s12 center">
-          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4JHKLyIysLF90bKk8UAU3TjhTERzYqGWs39rMoqctbERfeRFa5RPMgtqojB0OTCblYl-CxRrS_OXC/embed?start=false&amp;loop=false&amp;delayms=10000" frameborder="0" width="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="slide-height"></iframe>
+        <div class="row">
+          <div class="col s12 m4 ">
+            <div class="icon-block modal-trigger mouse-hover"  data-target="modal1">
+              <h2 class="center brown-text"><div><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></div></h2>
+              <h6 class="center">歩行者検出<br>Pedestrian detection</h6>
+            </div> 
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+               <h4>Two-stream Faster R-CNN を用いた夜間歩行者検出</h4>
+               <h5>◆概要</h5>
+               <p>
+                本研究では、CNN (Convolutional Neural Network) の構造改良、歩行者のモーション情報活用により、夜間でも高い精度で歩行者を検出可能な手法の構築に取り組みます。<br>
+                夜間の歩行者検出性能の向上を目的としています。
+              </p><br>
+              <h5>◆背景</h5>
+              <p>
+                交通事故の統計によると、歩行者死亡事故の約７割は夜間に発生しています。このため、夜間でも高い精度で歩行者を検出できることが望まれます。<br>
+                一方で、夜間の画像に着目した歩行者検出の研究は非常に少ないのが現状です。夜間の画像は昼間の画像と比較して不鮮明です。<br>
+                このため一般的に、昼間に高い精度で歩行者を検出できる検出器であっても、夜間においては検出精度の低下が起こります。
+              </p><br> 
+              <h5>◆参考文献/関連研究</h5>
+              <p>
+                [1] Neumann, L., Karg, M., Zhang, S., Scharfenberger, C., Piegert, E., Mistr, S., Prokofyeva, O., Thiel, R., Vedaldi, A., Zisserman, A., & Schiele, B. (in press). NightOwls: A Pedestrians at Night Dataset. In ACCV 2018.<br>
+                [2] Soonmin Hwang, Jaesik Park, Namil Kim, Yukyung Choi and In So Kweon. Multispectral Pedestrian Detection: Benchmark Dataset and Baseline. CVPR, 2015.
+              </p> 
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>  
         </div>
-        <div class="col s12 m4 ">
-          <div class="icon-block modal-trigger mouse-hover"  data-target="modal1">
-            <h2 class="center brown-text"><div><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></div></h2>
-            <h6 class="center">歩行者検出<br>Pedestrian detection</h6>
+        <div class="col s12 m4">
+          <div class="icon-block modal-trigger mouse-hover"  data-target="modal2">
+            <h2 class="center brown-text"><a class=" brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
+            <h6 class="center">蝶分類<br>Butterfly classification</h6>
           </div> 
           <!-- Modal Structure -->
-          <div id="modal1" class="modal">
+          <div id="modal2" class="modal">
             <div class="modal-content">
-             <h4>Two-stream Faster R-CNN を用いた夜間歩行者検出</h4>
-             <h5>◆概要</h5>
+              <h4>蝶分類</h4>
+              <h5>概要</h5>
+              <p>
+               主に作成したチョウのデータセットからCNNを用いて特徴を抽出し、SVMで識別を行います。データセットには１つの画像に対してチョウの種類名のみならず属性や希少度、また画像内でのチョウの位置や翅・脚の位置などがアノテーションとしてそれぞれの画像に付いています。特徴の抽出方法の改善やデータセットの質の向上により、識別の精度をさらに高くすることが目標です。
+             </p>
+             <h5>背景</h5>
              <p>
-                    本研究では、CNN (Convolutional Neural Network) の構造改良、歩行者のモーション情報活用により、夜間でも高い精度で歩行者を検出可能な手法の構築に取り組みます。<br>
-                    夜間の歩行者検出性能の向上を目的としています。
-             </p><br>
-             <h5>◆背景</h5>
-             <p>
-                    交通事故の統計によると、歩行者死亡事故の約７割は夜間に発生しています。このため、夜間でも高い精度で歩行者を検出できることが望まれます。<br>
-                    一方で、夜間の画像に着目した歩行者検出の研究は非常に少ないのが現状です。夜間の画像は昼間の画像と比較して不鮮明です。<br>
-                    このため一般的に、昼間に高い精度で歩行者を検出できる検出器であっても、夜間においては検出精度の低下が起こります。
-             </p><br> 
-             <h5>◆参考文献/関連研究</h5>
-             <p>
-                    [1] Neumann, L., Karg, M., Zhang, S., Scharfenberger, C., Piegert, E., Mistr, S., Prokofyeva, O., Thiel, R., Vedaldi, A., Zisserman, A., & Schiele, B. (in press). NightOwls: A Pedestrians at Night Dataset. In ACCV 2018.<br>
-                    [2] Soonmin Hwang, Jaesik Park, Namil Kim, Yukyung Choi and In So Kweon. Multispectral Pedestrian Detection: Benchmark Dataset and Baseline. CVPR, 2015.
-             </p> 
-            </div>
+               チョウの詳細認識とはチョウの画像からどの種類のチョウなのかを識別することです。日本国内だけでも253種類生息しており、見分けるには専門家やアマチュアレベルの知識が必要となりますが、画像処理技術を用いることで、誰でも簡単に識別ができるようになります。チョウの生息場所の把握は環境保全の面でも重要な情報であるため、学術的のみならず社会貢献度も高い研究内容です。
+             </p>
+           </div>
+           <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>   
+      </div>
+      <div class="col s12 m4">
+        <div class="icon-block modal-trigger mouse-hover"  data-target="modal3">
+          <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
+          <h6 class="center">映像要約<br>Video summary</h6>
+        </div> 
+        <!-- Modal Structure -->
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <h4>監視カメラ映像からの幼稚園児の 1 日ダイジェスト自動生成</h4><br>
+            <h5>◆概要</h5>
+            <p>
+              この研究では幼稚園の日常生活を記録した幼稚園児の1日ダイジェストを自動で生成するシステムの実現に取り組んでいます。<br>
+              主なアプローチとしてはまず8台のカメラと8代の無線タグレシーバーの組み合わせを1セットとして園児が頻繁に行く場所に設置します。<br>　
+              これをすることで各園児の位置情報が取得でき、対象園児の映る映像のみを取り出すことができます。<br>
+              次に録画された映像を「食事」「遊び」「睡眠」「集団行動」の4つのイベントに分けます。<br>
+              イベントを識別するときは短くても数分連続して起こる事を考慮して「1分間」と単位時間とします。<br>
+            </p>
+            <h5>◆背景</h5>
+            <p>
+              幼稚園は家庭とは異なる環境のため子供の様子を知りたい保護者がたくさんいます。<br>
+              そのためいくつかの幼稚園は遠隔監視カメラネットワークシステムを使って子供の映像を録画しています。<br>
+              しかし複数のカメラで記録された映像は,1日延べ数十時間もあるため見たい映像を手作業で探さないといけません。<br>
+              そこで、この研究では幼稚園の記録映像から園児の1日のダイジェスト映像を生成するシステムを実現する研究をしています。<br>
+            </p><br>
+            <h4 class="center"><img src="image/study/image1.png" alt="幼稚園児の1日ダイジェスト映像" width="350" height="200"></h4>
+            <h5>◆参考文献</h5>
+            <p>
+              [1]石川 友哉, 王 彧, 加藤 ジェーン：幼稚園生活を記録した映像の要約画像ラボ, G11 05 04,2011<br>
+              [2]石川 友哉, 王 彧, 加藤 ジェーン：監視カメラ映像からの幼稚園児の1日ダイジェスト生成 電子情報通信学会 パターン認識 PRMU
+            </p>                
+          </div>
           <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
           </div>
-        </div>  
+        </div>    
       </div>
       <div class="col s12 m4">
-        <div class="icon-block modal-trigger mouse-hover"  data-target="modal2">
-          <h2 class="center brown-text"><a class=" brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
-          <h6 class="center">蝶分類<br>Butterfly classification</h6>
+        <div class="icon-block modal-trigger mouse-hover"  data-target="modal4">
+          <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
+          <h6 class="center">暴力度レーティング<br>Violence rating</h6>
         </div> 
         <!-- Modal Structure -->
-        <div id="modal2" class="modal">
+        <div id="modal4" class="modal">
           <div class="modal-content">
-                <h4>蝶分類</h4>
-                <h5>概要</h5>
-                <p>
-                     主に作成したチョウのデータセットからCNNを用いて特徴を抽出し、SVMで識別を行います。データセットには１つの画像に対してチョウの種類名のみならず属性や希少度、また画像内でのチョウの位置や翅・脚の位置などがアノテーションとしてそれぞれの画像に付いています。特徴の抽出方法の改善やデータセットの質の向上により、識別の精度をさらに高くすることが目標です。
-                </p>
-                <h5>背景</h5>
-                <p>
-                     チョウの詳細認識とはチョウの画像からどの種類のチョウなのかを識別することです。日本国内だけでも253種類生息しており、見分けるには専門家やアマチュアレベルの知識が必要となりますが、画像処理技術を用いることで、誰でも簡単に識別ができるようになります。チョウの生息場所の把握は環境保全の面でも重要な情報であるため、学術的のみならず社会貢献度も高い研究内容です。
-                </p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>   
-    </div>
-    <div class="col s12 m4">
-      <div class="icon-block modal-trigger mouse-hover"  data-target="modal3">
-        <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
-        <h6 class="center">映像要約<br>Video summary</h6>
-      </div> 
-      <!-- Modal Structure -->
-      <div id="modal3" class="modal">
-        <div class="modal-content">
-                <h4>監視カメラ映像からの幼稚園児の 1 日ダイジェスト自動生成</h4><br>
-                <h5>◆概要</h5>
-                <p>
-                        この研究では幼稚園の日常生活を記録した幼稚園児の1日ダイジェストを自動で生成するシステムの実現に取り組んでいます。<br>
-                        主なアプローチとしてはまず8台のカメラと8代の無線タグレシーバーの組み合わせを1セットとして園児が頻繁に行く場所に設置します。<br>　
-                        これをすることで各園児の位置情報が取得でき、対象園児の映る映像のみを取り出すことができます。<br>
-                        次に録画された映像を「食事」「遊び」「睡眠」「集団行動」の4つのイベントに分けます。<br>
-                        イベントを識別するときは短くても数分連続して起こる事を考慮して「1分間」と単位時間とします。<br>
-                    </p>
-                    <h5>◆背景</h5>
-                    <p>
-                        幼稚園は家庭とは異なる環境のため子供の様子を知りたい保護者がたくさんいます。<br>
-                        そのためいくつかの幼稚園は遠隔監視カメラネットワークシステムを使って子供の映像を録画しています。<br>
-                        しかし複数のカメラで記録された映像は,1日延べ数十時間もあるため見たい映像を手作業で探さないといけません。<br>
-                        そこで、この研究では幼稚園の記録映像から園児の1日のダイジェスト映像を生成するシステムを実現する研究をしています。<br>
-                    </p><br>
-                    <h4 class="center"><img src="image/study/image1.png" alt="幼稚園児の1日ダイジェスト映像" width="350" height="200"></h4>
-                    <h5>◆参考文献</h5>
-                    <p>
-                        [1]石川 友哉, 王 彧, 加藤 ジェーン：幼稚園生活を記録した映像の要約画像ラボ, G11 05 04,2011<br>
-                        [2]石川 友哉, 王 彧, 加藤 ジェーン：監視カメラ映像からの幼稚園児の1日ダイジェスト生成 電子情報通信学会 パターン認識 PRMU
-                    </p>                
-        </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
-    </div>    
-  </div>
-  <div class="col s12 m4">
-    <div class="icon-block modal-trigger mouse-hover"  data-target="modal4">
-      <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
-      <h6 class="center">暴力度レーティング<br>Violence rating</h6>
-    </div> 
-    <!-- Modal Structure -->
-    <div id="modal4" class="modal">
-      <div class="modal-content">
             <h4>ペアワイズ比較に基づいた視覚暴力度の評価</h4><br>
             <h5>◆概要</h5>
             <p>
@@ -227,105 +238,112 @@
            </p><br>
            　<h5>◆背景</h5>
            <p>
-               急速なインターネットの発展と共に、子ども達が暴力的な映像に触れる機会が増えており深刻な問題となっています。<br>
-               子ども達の暴力は、暴力的なビデオと強い関係性があると立証されています。<br>
-               暴力度を推定して暴力的なビデオを認識し、子ども達に悪影響を与えるこれらのビデオから遠ざける事が大切です。
+             急速なインターネットの発展と共に、子ども達が暴力的な映像に触れる機会が増えており深刻な問題となっています。<br>
+             子ども達の暴力は、暴力的なビデオと強い関係性があると立証されています。<br>
+             暴力度を推定して暴力的なビデオを認識し、子ども達に悪影響を与えるこれらのビデオから遠ざける事が大切です。
            </p><br>
            <h5>◆参考文献/関連研究</h5>
            <p>
-               [1] Eron, Leonard D., et al. "Does television violence cause aggression?." American Psychologist 27.4 (1972): 253. <br>
-               [2] Wang, Yu, and Jien Kato. "Video-level violence rating with rank prediction." 2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR). IEEE, 2015. <br>
-               [3] Parikh, Devi, and Kristen Grauman. "Relative attributes." 2011 International Conference on Computer Vision. IEEE, 2011.
+             [1] Eron, Leonard D., et al. "Does television violence cause aggression?." American Psychologist 27.4 (1972): 253. <br>
+             [2] Wang, Yu, and Jien Kato. "Video-level violence rating with rank prediction." 2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR). IEEE, 2015. <br>
+             [3] Parikh, Devi, and Kristen Grauman. "Relative attributes." 2011 International Conference on Computer Vision. IEEE, 2011.
            </p>
-      </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+         </div>
+         <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>    
     </div>
-  </div>    
-</div>
-<div class="col s12 m4">
-        <div class="icon-block modal-trigger mouse-hover"  data-target="modal4">
-          <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a>
-            <h6 class="center">人物行動認識・人物詳細認識<br>Human behavior recognition</h6>
-          </div> 
-          <!-- Modal Structure -->
-          <div id="modal4" class="modal">
-            <div class="modal-content">
+    <div class="col s12 m4">
+      <div class="icon-block modal-trigger mouse-hover"  data-target="modal4">
+        <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a>
+          <h6 class="center">人物行動認識・人物詳細認識<br>Human behavior recognition</h6>
+        </div> 
+        <!-- Modal Structure -->
+        <div id="modal4" class="modal">
+          <div class="modal-content">
 
-             <h4>人物行動認識・人物詳細認識</h4><br>
-             <h5>◆概要</h5>
-             <p>
-                まだ未記入<br>
-            </p><br>
-            　<h5>◆背景</h5>
-            <p>
-              まだ未記入
-            </p><br>
-            <h5>◆参考文献/関連研究</h5>
+           <h4>人物行動認識・人物詳細認識</h4><br>
+           <h5>◆概要</h5>
+           <p>
+            本研究では、注目領域（差異のある位置）をディープランニングの方法で捉えることについて、探究している。
+          </p><br>
+          　<h5>◆背景</h5>
+          <p>
+            画像・映像における認識技術は、一般認識（general recognition）と詳細認識 （fine-grained recognition）の二種類に分けられる。<br>
+            一般認識とは、明確に異なることを識別する能力を指す。詳細認識はより細かいレベルの識別能力を指す。<br>
+            一般認識と比べて、詳細認識は視覚情報をより深く理解し日常生活をサポートするという点で実用上の価値があるが、微かな差異のある位置を有効的に捉えることが難しい。
+          </p><br>
+          <h5>◆参考文献/関連研究</h5>
 
-            <p>
-                [1] Eron, Leonard D., et al. "Does television violence cause aggression?." American Psychologist 27.4 (1972): 253. <br>
-                [2] Wang, Yu, and Jien Kato. "Video-level violence rating with rank prediction." 2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR). IEEE, 2015. <br>
-                [3] Parikh, Devi, and Kristen Grauman. "Relative attributes." 2011 International Conference on Computer Vision. IEEE, 2011.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-          </div>
-        　</div>    
- </div>
-<div class="col s12 m4">
-  <div class="icon-block modal-trigger mouse-hover"  data-target="modal5">
-    <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
-    <h6 class="center">運転推定<br>Driving estimation</h6>
-  </div> 
-  <!-- Modal Structure -->
-  <div id="modal5" class="modal">
-    <div class="modal-content">
-            <h4>車載カメラ及び単一ビュー深度を用いた運転操作推定</h4><br>
-            <h5>◆研究概要</h5>
-            <p>
-              本研究では、公開されている単一ビューの車載カメラ画像データセットの中から運転操作データセットを用いて、単一ビュー画像から深さマップに変換する方法を研究して、優秀な方法を見つけます。<br>
-              CNN (Convolutional Neural Network)を利用し、 単一ビュー画像から深さマップに変換する方法を研究して、既存の研究よりいい高精度運転操作推定システムの構築に取り組みます。<br>
-              また、関連する研究のモデルを探し、最適なディープラーニングモデルを作る予定です。<br>
-              最終的には深さマップと前述の単一ビュー画像を組み合わせて、モデルに入力し、トレーニングを行うことで、車載カメラから単一ビュー画像を用いて既存の研究よりいい高精度運転操作推定システムを完成させます。
-            </p><br>
-            <h4 class="center"><img src="image/study/driving.png" alt="車載カメラ及び単一ビュー深度を用いた運転操作推定" width="310" height="130"></h4>
-            <h5>◆背景</h5>
-            <p>
-              近年、自動車の普及するとともに、交通事故の可能性が増加しています。<br>
-              それに伴い、精度の良い自動運転技術による自動運転支援の需要が高まっています。<br>
-              しかし、既存の運転操作推定システムは「車載カメラ」に加え「LIDAR 3Dポイントマップからのデータセット」を使用しているため、車載カメラだけよりもライダー機器を用いた場合、コストや故障のリスクが高く、処理時間が掛かってしまいます。<br>
-              そこで本研究では単一の車載カメラのみで運転操作推定に取り組んでいます。
-            </p><br>
-            <h5>◆参考文献/関連研究</h5>
-            <p>
-                    [1] Chen Y, Wang J, Li J, et al. Lidar-video driving dataset: Learning driving policies effectively[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018: 5870-5878.
-                    <br>
-                    [2] Godard C, Mac Aodha O, Brostow G J. Unsupervised monocular depth estimation with left-right consistency[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017: 270-279
-            </p>
+          <p>
+            [1] Eron, Leonard D., et al. "Does television violence cause aggression?." American Psychologist 27.4 (1972): 253. <br>
+            [2] Wang, Yu, and Jien Kato. "Video-level violence rating with rank prediction." 2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR). IEEE, 2015. <br>
+            [3] Parikh, Devi, and Kristen Grauman. "Relative attributes." 2011 International Conference on Computer Vision. IEEE, 2011.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      　</div>    
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    <div class="col s12 m4">
+      <div class="icon-block modal-trigger mouse-hover"  data-target="modal5">
+        <h2 class="center brown-text"><a class="brown-text"><em class="material-icons">insert_drive_file</em></a></h2>
+        <h6 class="center">運転推定<br>Driving estimation</h6>
+      </div> 
+      <!-- Modal Structure -->
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <h4>車載カメラ及び単一ビュー深度を用いた運転操作推定</h4><br>
+          <h5>◆研究概要</h5>
+          <p>
+            本研究では、公開されている単一ビューの車載カメラ画像データセットの中から運転操作データセットを用いて、単一ビュー画像から深さマップに変換する方法を研究して、優秀な方法を見つけます。<br>
+            CNN (Convolutional Neural Network)を利用し、 単一ビュー画像から深さマップに変換する方法を研究して、既存の研究よりいい高精度運転操作推定システムの構築に取り組みます。<br>
+            また、関連する研究のモデルを探し、最適なディープラーニングモデルを作る予定です。<br>
+            最終的には深さマップと前述の単一ビュー画像を組み合わせて、モデルに入力し、トレーニングを行うことで、車載カメラから単一ビュー画像を用いて既存の研究よりいい高精度運転操作推定システムを完成させます。
+          </p><br>
+          <h4 class="center"><img src="image/study/driving.png" alt="車載カメラ及び単一ビュー深度を用いた運転操作推定" width="310" height="130"></h4>
+          <h5>◆背景</h5>
+          <p>
+            近年、自動車の普及するとともに、交通事故の可能性が増加しています。<br>
+            それに伴い、精度の良い自動運転技術による自動運転支援の需要が高まっています。<br>
+            しかし、既存の運転操作推定システムは「車載カメラ」に加え「LIDAR 3Dポイントマップからのデータセット」を使用しているため、車載カメラだけよりもライダー機器を用いた場合、コストや故障のリスクが高く、処理時間が掛かってしまいます。<br>
+            そこで本研究では単一の車載カメラのみで運転操作推定に取り組んでいます。
+          </p><br>
+          <h5>◆参考文献/関連研究</h5>
+          <p>
+            [1] Chen Y, Wang J, Li J, et al. Lidar-video driving dataset: Learning driving policies effectively[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018: 5870-5878.
+            <br>
+            [2] Godard C, Mac Aodha O, Brostow G J. Unsupervised monocular depth estimation with left-right consistency[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017: 270-279
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>   
     </div>
-  </div>   
+  </div>
 </div>
-</div>
-</div>
-
 </div>
 
 <!------Member Section----->
-<div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper css-fade4">
   <!--div class="section no-pad-bot" -->
   <div class="container">
     <div class="row center">
       <h4 class="header col s12 light" id="member_p">MEMBER</h4>
       <p class="left-align light">
-            研究室に所属しているメンバーを紹介します.視覚情報処理研究室では現在,教員が2名,D2が2名,D1が1名,M2が2名,M1が1名,B4が9名の合計17名で構成されています.<br>
-            下のタブをクリックすると,メンバーの名前や教員の経歴などが掲載したものが見られます.
+        研究室に所属しているメンバーを紹介します.視覚情報処理研究室では現在,教員が2名,D2が2名,D1が1名,M2が2名,M1が1名,B4が9名の合計17名で構成されています.<br>
+        下のタブをクリックすると,メンバーの名前や教員の経歴などが掲載したものが見られます.
       </p>
       <a href="member.html" class="btn modal-trigger">MORE</a>
+    </div>
+    <div class="row center">
+      <p class="resizeimage">
+        <img src="image/background7small.jpg" alt="研究室全員集合" class="miniimage">
+        <img src="image/background7.jpg" alt="研究室全員集合" class="bigimage">
+      </p>
     </div>
   </div>
   <!--/div -->
@@ -333,85 +351,85 @@
 </div>
 
 　<!------Publication Section----->
-  <div class="container">
-    <div class="section">
-        <div class="row">
-          <div class="col s12 center">
-            <h4 id="publication_p">PUBLICATION</h4>
-            <p class="center">
-                視覚情報処理研究室の研究業績の一覧を挙げています。
-            </p>
-            <ul class="box_simple adjust" >
-                <b>＜2018年度＞</b><br>
-                ・加藤ジェーン，王彧，小久保嘉人，「深層学習アプローチに基づいた歩行者の詳細認識」，画像ラボ，日本工業出版，Vol.29, No.2, pp.15-24, 2018.2.<br>
-                ・小平美沙季，王彧，加藤ジェーン，「マルチレベルのパーツマイニングを用いた歩行者検出」, 電子情報通信学会技術報告(PRMU), **(**), pp.-, 青山学院大学，2018.3.18.<br>
-                ・Longjiao Zhao, Yu Wang and Jien Kato, "Image Retrieval with Augmented Fine-tuned CNN Features", 電子情報通信学会技術報告(PRMU), **(**), pp.-, 青山学院大学，2018.3.18.<br>
-                ・三井弘希,「車載カメラ及びLidarを用いた運転操作推定」, Master thesis, 2018.1.26.<br>
-                ・Dichao Liu, "Fine-grained Action Recognition based on Multi-scale Attention Learning," Master thesis, 2018.1.26.<br>
-                ・Longjiao Zhao, "Study on Deep Convoluational Features in Image Retrieval," Master thesis, 2018.1.26.<br>
-                ・三井弘希,「車載カメラ及びLidarを用いた運転操作推定」, Master thesis, 2018.1.26.
-            </ul>
-            <p class="center">
-                Book Chapter and Tutorial Papers /
-                Journal Articles(雑誌論文) /
-                International Conference(国際学会) /
-                Domestic Conference(国内学会) /
-                Patents(特許) /
-                Thesis(論文) /
-                Visiting(来歴)
-              などは<a href="publication.html">こちら</a>から。</p>
-                             <a href="publication.html" class="btn modal-trigger">MORE</a>
-          </div>
-       
+<div class="container">
+  <div class="section css-fade5">
+    <div class="row">
+      <div class="col s12 center">
+        <h4 id="publication_p">PUBLICATION</h4>
+        <p class="center">
+          視覚情報処理研究室の研究業績の一覧を挙げています。
+        </p>
+        <ul class="box_simple adjust" >
+          <b>＜2018年度＞</b><br>
+          ・加藤ジェーン，王彧，小久保嘉人，「深層学習アプローチに基づいた歩行者の詳細認識」，画像ラボ，日本工業出版，Vol.29, No.2, pp.15-24, 2018.2.<br>
+          ・小平美沙季，王彧，加藤ジェーン，「マルチレベルのパーツマイニングを用いた歩行者検出」, 電子情報通信学会技術報告(PRMU), **(**), pp.-, 青山学院大学，2018.3.18.<br>
+          ・Longjiao Zhao, Yu Wang and Jien Kato, "Image Retrieval with Augmented Fine-tuned CNN Features", 電子情報通信学会技術報告(PRMU), **(**), pp.-, 青山学院大学，2018.3.18.<br>
+          ・三井弘希,「車載カメラ及びLidarを用いた運転操作推定」, Master thesis, 2018.1.26.<br>
+          ・Dichao Liu, "Fine-grained Action Recognition based on Multi-scale Attention Learning," Master thesis, 2018.1.26.<br>
+          ・Longjiao Zhao, "Study on Deep Convoluational Features in Image Retrieval," Master thesis, 2018.1.26.<br>
+          ・三井弘希,「車載カメラ及びLidarを用いた運転操作推定」, Master thesis, 2018.1.26.
+        </ul>
+        <p class="center">
+          Book Chapter and Tutorial Papers /
+          Journal Articles(雑誌論文) /
+          International Conference(国際学会) /
+          Domestic Conference(国内学会) /
+          Patents(特許) /
+          Thesis(論文) /
+          Visiting(来歴)
+          などは<a href="publication.html">こちら</a>から。</p>
+          <a href="publication.html" class="btn modal-trigger">MORE</a>
         </div>
+
+      </div>
     </div>
   </div>
 
-<footer class="page-footer teal">
-  <div class="section container">
-    <div class="row">
-      <div class="col s12 center">
-        <h4 id="contact_p">Contact Us</h4>
-        <!-- <div class="box17"> -->
+  <footer class="page-footer teal">
+    <div class="section container">
+      <div class="row">
+        <div class="col s12 center">
+          <h4 id="contact_p">Contact Us</h4>
+          <!-- <div class="box17"> -->
+            <div class="col m6">
+             <table>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104580.04579676189!2d135.7973803!3d35.0035401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d61a45d%3A0xe0faa970230f12c3!2z44Kv44Oq44Ko44O844K344On44OzIOOCs-OCog!5e0!3m2!1sja!2sjp!4v1559034516056!5m2!1sja!2sjp&t=m" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </table>					
+          </div>
           <div class="col m6">
-           <table>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104580.04579676189!2d135.7973803!3d35.0035401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60016dc10d61a45d%3A0xe0faa970230f12c3!2z44Kv44Oq44Ko44O844K344On44OzIOOCs-OCog!5e0!3m2!1sja!2sjp!4v1559034516056!5m2!1sja!2sjp&t=m" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </table>					
-        </div>
-        <div class="col m6">
-          <table>
-            <tr>
-              <th>住所</th>
-              <td>〒525-0058<br>
-                滋賀県草津市野路東１丁目１−１<br>
-                クリエーションコア ２階<br></td>
-              </tr>
+            <table>
               <tr>
-                <th>E-mail</th>
-                <td><img src="image/mail.png" height="30px"></td>
-              </tr>
-              <tr>
-                <th>Phone/Fax</th>
-                <td>+81 (077) 599-4374  </td>
-              </tr>
-            </table>
+                <th>住所</th>
+                <td>〒525-0058<br>
+                  滋賀県草津市野路東１丁目１−１<br>
+                  クリエーションコア ２階<br></td>
+                </tr>
+                <tr>
+                  <th>E-mail</th>
+                  <td><img src="image/mail.png" height="30px"></td>
+                </tr>
+                <tr>
+                  <th>Phone/Fax</th>
+                  <td>+81 (077) 599-4374  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-copyright">
-      <div class="container"><center>
-        Copyright © <a class="brown-text text-lighten-3"> 2019- Visual Information Processing Laboratory</a></center>
+      <div class="footer-copyright">
+        <div class="container">
+          Copyright © <a class="brown-text text-lighten-3"> 2019- Visual Information Processing Laboratory</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/script.js"></script>
-
-</body>
-</html>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scrollanimation.js"></script>
+  </body>
+  </html>
