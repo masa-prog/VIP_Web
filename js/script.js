@@ -20,7 +20,10 @@ $(document).ready(function(){
 	$('.modal').modal();
 
 	// スライダーの設定
-	$('.slider').slider();
+  $('.slider').slider({
+    height: 750,
+    indicators: false
+  });
 
    // ドロップダウンの処理
    $(".dropdown-trigger").dropdown();
