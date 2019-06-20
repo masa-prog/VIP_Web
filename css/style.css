@@ -22,8 +22,8 @@ p {
 
 .box_simple{
 color: #1c1d1f;
-border-top: solid #0ad365 1px;/*＊上のボーダー*/
-border-bottom: solid #0ad365 1px;/*＊下のボーダー*/
+border-top: solid #f37a2acc 1px;/*＊上のボーダー*/
+border-bottom: solid #f37a2acc 1px;/*＊下のボーダー*/
 padding: 0.5em 0 0.5em 1.5em;
   
 }
@@ -106,5 +106,29 @@ footer.page-footer {
     text-align: center;
   }
 }
+
+/*スライダーの文字位置を中央にする（なぜか50%だと中央にならない）*/
+.slider .slides li .caption {
+  top: 30% !important;
+}
+
+.teal {
+ background-color: #f37a2acc !important;
+}
+
+.btn, .btn-large, .btn-small, .btn-flat {
+ color:#ffffff !important;
+ background-color: #f37a2acc !important;
+}
+
+.btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus {
+ background-color: #ee660bda !important;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #ee660bda !important;
+}
+
+
 
 

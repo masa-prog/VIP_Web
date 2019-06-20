@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 	// sidenavの設定
+
+  //ウィンドウの高さを取得
+  var windowHeight = $(window).height() -64;
+
 	$('.sidenav').sidenav({
 		edge:'right',
 	});
@@ -21,7 +25,7 @@ $(document).ready(function(){
 
 	// スライダーの設定
   $('.slider').slider({
-    height: 750,
+    height: windowHeight,
     indicators: false
   });
 
